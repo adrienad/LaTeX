@@ -34,17 +34,24 @@
 \chapter*{Remerciement}
 Je voudrais commencer par remercier blablabla
 
+\renewcommand{\contentsname}{Sommaire}
+\setcounter{tocdepth}{1}
+\tableofcontents
+
+\listoffigures
+
 \chapter*{Introduction}
+\addcontentsline{toc}{chapter}{Introduction}
 Les machines vont détruirent le monde.
 
-\chapter{Un peu de théorie}
+\chapter[ Un peu de théorie]{Un peu (beaucoup, passionnement, à la folie et...) de théorie}
 
 \section{On aime les sections}
 
 Quid?\footnote{Petit mot que l'on dit souvent} qui se etiam nunc subsidiis patrimonii aut amicorum liberalitate sustentant,
-hos perire patiemur? An, si qui frui publico non potuit per hostem, hic tegitur ipsa
-lege censoria; quem is frui non sinit, qui est, etiamsi non appellatur, hostis, huic
-ferri auxilium non oportet?
+hos perire patiemur?\cite{ref} An, si\cite{ref2} qui frui publico\cite{ref3} non potuit per hostem, hic tegitur ipsa\cite{ref4}
+lege censoria; quem is frui\cite{ref5} non sinit, qui est, etiamsi non appellatur, hostis, huic
+ferri auxilium non oportet?\cite{ref6}
 \label{clé1}
 
 Retinete igitur in provincia diutius eum, qui de sociis
@@ -194,13 +201,19 @@ Cuius acerbitati uxor grave accesserat incentivum, germanitate Augusti turgida s
 \chapter{Les applications}
 
 \chapter*{Conclusions}
+\addcontentsline{toc}{chapter}{Conclusion}
 
 \chapter*{Sources et licences}
+\addcontentsline{toc}{chapter}{Source et licences}
 
 \begin{description}
  \item [Deep learning]: http;//blablabla
  
 \end{description}  
+
+\bibliographystyle{plain}
+\bibliography{biblio}
+
 
 \appendix
 
